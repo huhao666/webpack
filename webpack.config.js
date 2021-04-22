@@ -4,7 +4,10 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = {
   mode:'production',
-  entry: './src/index.js',
+  entry: {
+    main:'./src/index.js',
+    sub:'./src/index.js'
+  },
   module:{
     rules:[{
       test:/\.(jpg|png|gif)$/,
@@ -43,7 +46,8 @@ module.exports = {
     new CleanWebpackPlugin()
   ],
   output:{
-    filename : 'dist.js',
+    //publicPath:'http://cdn.com.cn',
+    filename : '[name].js',
     path: path.resolve(__dirname, 'dist')
   }
 }
