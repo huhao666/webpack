@@ -5,8 +5,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 module.exports = {
   mode:'production',
   entry: {
-    main:'./src/index.js',
-    sub:'./src/index.js'
+    main:'./src/index.js'
   },
   module:{
     rules:[{
@@ -16,7 +15,7 @@ module.exports = {
         options:{
           name:'[name]-[hash:7].[ext]',
           outputPath:'images/',
-          limit: 102400    //1024是1kb          
+          limit: 102400    //1024是1kb
         }
       }
     },{
