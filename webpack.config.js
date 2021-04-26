@@ -7,6 +7,11 @@ module.exports = {
   entry: {
     main:'./src/index.js'
   },
+  devServer:{
+    contentBase:'./dist',
+    open:true,                       //运行start命令后，自动帮我们打开浏览器
+    port:8089
+  },
   module:{
     rules:[{
       test:/\.(jpg|png|gif)$/,
