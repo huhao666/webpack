@@ -45,13 +45,13 @@ plugins:[new HtmlWebpackPlugin({
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 plugins:[
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'index.html',
-      minify: {
-        collapseWhitespace: true
-      }
-    }),
-    new CleanWebpackPlugin()
-  ],
+  new HtmlWebpackPlugin({
+    template: './src/index.html',
+    filename: 'index.html',
+    minify: {
+      collapseWhitespace: true
+    }
+  }),
+  new CleanWebpackPlugin()
+],
 ```
