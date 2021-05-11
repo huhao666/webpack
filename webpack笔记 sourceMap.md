@@ -9,7 +9,6 @@ sourceMap 它是一个映射关系，他知道dist目录下main.js文件的某�
 加个cheap,只会精确到第几行不会第几列,build的速度会快
 
 ### 在devtool里配置
-
 ```js
 devtool:'source-map'   //打包后dist目录下会生成.map文件
 //'inline-source-map'  打包后dist目录下不会生成.map文件，会生成base64代码写在打包后的js内
@@ -36,16 +35,16 @@ module.export ={
 ```
 
 
-### 使用 WebpackDevServer 提升开发效率
+## 使用 WebpackDevServer 提升开发效率
 修改源代码后会自动打包
-#### 方法一：
+### 方法一：
 package.json
 ```js
 "scripts": {
   "watch": "webpack --watch"
 }
 ```
-#### 方法二：
+### 方法二：
 安装`npm i webpack-dev-server -D`
 package.json：
 ```js
@@ -53,6 +52,7 @@ package.json：
   "start": "webpack-dev-server",
 }
 ```
+
 webpack.config.js：
 ```js
 devServer:{
